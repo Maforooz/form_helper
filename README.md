@@ -62,31 +62,6 @@ The `RiskGate` custom agent (`risk_gate.py`) checks the classifier's `risk_level
 
 `OutputComposerAgent` produces a plain-text answer sheet ("write X in the box labeled Y") rather than an edited copy of the official form. Editing an official document image is legally murkier and more error-prone than giving clear copy-by-hand instructions.
 
-## Setup
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Copy `.env.example` to `.env` and add your Gemini API key:
-```
-GOOGLE_API_KEY=your_key_here
-```
-
-**Never commit `.env`** — it's already in `.gitignore`.
-
-## Run
-
-```bash
-adk web form_sahayak
-```
-
-Open the local URL it prints, attach a photo of a sample form, and step through the conversation. You can also use:
-```bash
-adk run form_sahayak     # terminal-only interface
-```
 
 ## Sample documents used for testing
 
